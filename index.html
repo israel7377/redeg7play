@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede G7 Play - Sua Nova Experiência de Entretenimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">REDE <strong>G7</strong> <span class="highlight-green">PLAY</span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            </nav>
+            <a href="#planos" class="btn-primary"><i class="fab fa-whatsapp"></i> ASSINE AGORA</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>SUA NOVA EXPERIÊNCIA <br><span class="highlight-green">DE ENTRETENIMENTO</span> COMEÇA AQUI</h1>
+                <p>A plataforma completa para você assistir onde e quando quiser. Mais praticidade, qualidade e conteúdo na palma da sua mão.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-gem text-green"></i> QUALIDADE PREMIUM</li>
+                    <li><i class="fas fa-bolt text-yellow"></i> ESTÁVEL E RÁPIDO</li>
+                    <li><i class="fas fa-shield-alt text-green"></i> SEGURO E CONFIÁVEL</li>
+                    <li><i class="fas fa-smile text-green"></i> SUPORTE HUMANIZADO</li>
+                </ul>
+                <div class="hero-buttons">
+                    <button id="btn-gerar-teste" class="btn-primary btn-large" style="border: none; cursor: pointer;">
+                        <i class="fas fa-play"></i> GERAR TESTE 4H AGORA
+                    </button>
+                    <a href="#planos" class="btn-outline">VER PLANOS <i class="fas fa-chevron-right"></i></a>
+                </div>
+                
+                <!-- Caixa de Resultado do Teste -->
+                <div id="resultado-teste" style="display: none; margin-top: 20px; padding: 15px; background: #111; border: 1px solid #39ff14; border-radius: 8px; text-align: left;">
+                    <h4 style="color: #39ff14; margin-bottom: 10px;"><i class="fas fa-check-circle"></i> Teste Gerado com Sucesso!</h4>
+                    <p style="margin-bottom: 5px;"><strong>Usuário:</strong> <span id="teste-user" style="color: #fff; font-family: monospace; font-size: 1.1rem; background: #222; padding: 2px 6px; border-radius: 4px;"></span></p>
+                    <p><strong>Senha:</strong> <span id="teste-pass" style="color: #fff; font-family: monospace; font-size: 1.1rem; background: #222; padding: 2px 6px; border-radius: 4px;"></span></p>
+                    <small style="color: #aaa; margin-top: 10px; display: block;">Baixe nosso app e insira os dados acima para acessar.</small>
+                </div>
+
+                <!-- Caixa de Erro -->
+                <div id="erro-teste" style="display: none; margin-top: 20px; padding: 15px; background: rgba(255, 0, 0, 0.1); border: 1px solid #ff3333; border-radius: 8px; text-align: left;">
+                    <h4 style="color: #ff3333; margin-bottom: 5px;"><i class="fas fa-exclamation-triangle"></i> Limite Excedido</h4>
+                    <p id="msg-erro" style="font-size: 0.9rem;"></p>
+                </div>
+                
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pessoas assistindo TV" class="tv-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Teste -->
+    <section class="banner-teste">
+        <div class="container banner-flex">
+            <div class="banner-text">
+                <i class="far fa-clock text-green" style="font-size: 2.5rem; margin-right: 15px;"></i>
+                <div>
+                    <h2>TESTE AGORA 4h</h2>
+                    <p>Experimente agora e descubra o melhor do entretenimento!</p>
+                </div>
+            </div>
+            <a href="#inicio" class="btn-primary"><i class="fas fa-arrow-up"></i> SUBIR PARA GERAR O TESTE</a>
+        </div>
+    </section>
+
+    <!-- Devices Section -->
+    <section id="vantagens" class="devices text-center">
+        <div class="container">
+            <h2>FUNCIONA EM <span class="highlight-green">TODOS OS SEUS DISPOSITIVOS</span></h2>
+            <div class="device-grid">
+                <div class="device-item"><i class="fas fa-tv"></i><p>SMART TV</p></div>
+                <div class="device-item"><i class="fas fa-box"></i><p>TV BOX</p></div>
+                <div class="device-item"><i class="fab fa-android"></i><p>ANDROID</p></div>
+                <div class="device-item"><i class="fab fa-apple"></i><p>IPHONE</p></div>
+                <div class="device-item"><i class="fas fa-tablet-alt"></i><p>TABLET</p></div>
+                <div class="device-item"><i class="fas fa-laptop"></i><p>COMPUTADOR</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="pricing">
+        <div class="container text-center">
+            <h2>ESCOLHA O <span class="highlight-green">PLANO IDEAL</span> PARA VOCÊ</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>MENSAL</h3><p>Ideal para começar</p>
+                    <div class="price">R$ <span>20</span>,00 <small>/mês</small></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check text-green"></i> Acesso completo</li>
+                        <li><i class="fas fa-check text-green"></i> Qualidade Premium</li>
+                        <li><i class="fas fa-check text-green"></i> Suporte 24h</li>
+                        <li><i class="fas fa-check text-green"></i> Todos os dispositivos</li>
+                    </ul>
+                    <a href="https://wa.me/5581997378540?text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20o%20plano%20MENSAL%20da%20Rede%20G7%20Play" target="_blank" class="btn-outline btn-full">ASSINAR AGORA</a>
+                </div>
+                <div class="price-card highlighted">
+                    <div class="badge-top">MAIS ESCOLHIDO</div>
+                    <h3>TRIMESTRAL</h3><p>Mais economia para você</p>
+                    <div class="price text-yellow">R$ <span>50</span>,00 <small>/3 meses</small></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check text-yellow"></i> Acesso completo</li>
+                        <li><i class="fas fa-check text-yellow"></i> Qualidade Premium</li>
+                        <li><i class="fas fa-check text-yellow"></i> Suporte 24h</li>
+                        <li><i class="fas fa-check text-yellow"></i> Todos os dispositivos</li>
+                    </ul>
+                    <a href="https://wa.me/5581997378540?text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20o%20plano%20TRIMESTRAL%20da%20Rede%20G7%20Play" target="_blank" class="btn-yellow btn-full">ASSINAR AGORA</a>
+                </div>
+                <div class="price-card">
+                    <h3>SEMESTRAL</h3><p>Mais conteúdo e economia</p>
+                    <div class="price">R$ <span>90</span>,00 <small>/6 meses</small></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check text-green"></i> Acesso completo</li>
+                        <li><i class="fas fa-check text-green"></i> Qualidade Premium</li>
+                        <li><i class="fas fa-check text-green"></i> Suporte 24h</li>
+                        <li><i class="fas fa-check text-green"></i> Todos os dispositivos</li>
+                    </ul>
+                    <a href="https://wa.me/5581997378540?text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20o%20plano%20SEMESTRAL%20da%20Rede%20G7%20Play" target="_blank" class="btn-outline btn-full">ASSINAR AGORA</a>
+                </div>
+                <div class="price-card">
+                    <h3>ANUAL</h3><p>Melhor custo-benefício</p>
+                    <div class="price">R$ <span>150</span>,00 <small>/12 meses</small></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check text-green"></i> Acesso completo</li>
+                        <li><i class="fas fa-check text-green"></i> Qualidade Premium</li>
+                        <li><i class="fas fa-check text-green"></i> Suporte 24h</li>
+                        <li><i class="fas fa-check text-green"></i> Todos os dispositivos</li>
+                    </ul>
+                    <a href="https://wa.me/5581997378540?text=Ol%C3%A1%2C%20gostaria%20de%20assinar%20o%20plano%20ANUAL%20da%20Rede%20G7%20Play" target="_blank" class="btn-outline btn-full">ASSINAR AGORA</a>
+                </div>
+            </div>
+            
+            <div class="trust-badges">
+                <span><i class="fas fa-shield-alt text-yellow"></i> PAGAMENTO SEGURO</span>
+                <span><i class="fas fa-headset text-yellow"></i> ATENDIMENTO 24H</span>
+                <span><i class="fas fa-medal text-yellow"></i> 7 DIAS DE GARANTIA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="how-it-works text-center">
+        <!-- Mantido igual ao anterior -->
+    </section>
+
+    <!-- Footer -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container text-center">
+            <h2>COMO <span class="highlight-green">FUNCIONA?</span></h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <h3>GERAR TESTE</h3>
+                    <p>Clique no botão de teste grátis e receba seus dados de acesso instantaneamente.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <h3>INSTALAR</h3>
+                    <p>Baixe nosso aplicativo recomendado e insira o usuário e senha gerados.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <h3>ASSISTIR</h3>
+                    <p>Pronto! Aproveite a melhor qualidade de imagem e estabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container text-center">
+            <h2>O QUE NOSSOS <span class="highlight-green">CLIENTES DIZEM</span></h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"A qualidade é excelente e nunca trava. O suporte da Rede G7 é nota 10!"</p>
+                    <div class="client-name">- Carlos Silva</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Melhor custo-benefício que encontrei. Recomendo muito para quem gosta de filmes."</p>
+                    <div class="client-name">- Maria Oliveira</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Atendimento rápido pelo WhatsApp e a instalação foi super simples."</p>
+                    <div class="client-name">- João Pereira</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <span class="logo-text" style="font-size: 2rem;">REDE <strong>G7</strong> <span class="highlight-green">PLAY</span></span>
+            </div>
+            <div class="footer-contact">
+                <h4>ATENDIMENTO</h4>
+                <p><i class="fab fa-whatsapp text-green"></i> 81-99737-8540</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
